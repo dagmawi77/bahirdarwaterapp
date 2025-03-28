@@ -1,4 +1,4 @@
-// ignore_for_file: missing_required_param, dead_code
+// ignore_for_file: missing_required_param
 
 import 'dart:io';
 //import 'package:covid_tracker/pages/screens/home_screen.dart';
@@ -46,13 +46,12 @@ class MyApp extends StatelessWidget {
             title: Text('Wellcome to AAWSA APP'),
             
           );
-    Widget child = MyHomePage(key: UniqueKey(), appBar: appBar);
-    if (flip) {
-      //home page fix
-      //child = CustomGuitarDrawer(child: child);
-    } else {
-      //child = CustomDrawer(child: child);
-    }
+    // Widget child = MyHomePage(appBar: appBar, key: null,);
+    // if (flip) {
+    //  // child = CustomGuitarDrawer(child: child);
+    // } else {
+    // //  child = CustomDrawer(child: child);
+    // }
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       //title: 'Flutter Demo',
@@ -61,7 +60,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.grey[300],
         primarySwatch: Colors.lightBlue,
       ),
-      home: child,
+     // home: child,
     );
   }
 }
@@ -105,12 +104,9 @@ class _MyHomePageState extends State<MyHomePage> {
         pageChanged(index);
       },
       children: <Widget>[
-        MyHomePage(
-          key: UniqueKey(),
-          appBar: widget.appBar,
-        ),
+        //MyHomePage(appBar: app, key: null,),
         FindCustKey(),
-       // Payment(),
+        Payment(key: null,),
         //NewsPage(),
         //InformationScreen(),
         //infoPage(),
@@ -282,7 +278,7 @@ class _MyHomePageState extends State<MyHomePage> {
               iconSize: 20,
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
               duration: Duration(milliseconds: 800),
-              tabBackgroundColor: Colors.grey[800] ?? Colors.grey,
+            //  tabBackgroundColor: Colors.grey[800],
               tabs: [
                 GButton(
                   icon: LineIcons.home,
@@ -517,12 +513,12 @@ Widget getData(snapshot) {
 //Widget build(BuildContext context) {}
 
 class MyHttpOverrides extends HttpOverrides {
-  @override
-  HttpClient createHttpClient(SecurityContext? context) {
-    return super.createHttpClient(context)
-      ..badCertificateCallback =
-          (X509Certificate cert, String host, int port) => true;
-  }
+  // @override
+  // HttpClient createHttpClient(SecurityContext context) {
+  //   return super.createHttpClient(context)
+  //     ..badCertificateCallback =
+  //         (X509Certificate cert, String host, int port) => true;
+  // }
 }
 
 

@@ -6,7 +6,7 @@ import 'GetLocationWidget.dart';
 import 'info.dart';
 import 'customerFeed.dart';
 import 'userDuity.dart';
-//import 'payment.dart';
+import 'payment.dart';
 import 'research.dart';
 //import 'news.dart';
 import 'post2.dart';
@@ -216,14 +216,14 @@ class MyDrawer extends StatelessWidget {
                       );
                     }), 
 
-                    // ListTile(
-                    // leading: Icon(Icons.payment, color: Colors.amber),
-                    // title: Text('ቢል መክፈያ'),
-                    // onTap: () {
-                    //   Navigator.of(context).push(
-                    //     MaterialPageRoute(builder: (context) => Payment(key: UniqueKey())),
-                    //   );
-                    // }),
+                    ListTile(
+                    leading: Icon(Icons.payment, color: Colors.amber),
+                    title: Text('ቢል መክፈያ'),
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => Payment(key: UniqueKey())),
+                      );
+                    }),
                      ListTile(
                     leading: Icon(
                       Icons.question_answer,

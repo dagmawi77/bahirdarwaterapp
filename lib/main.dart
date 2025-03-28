@@ -38,7 +38,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
 
   Widget _buildFullscreenImage() {
     return Image.asset(
-      'assets/aawsa_bu.jpg',
+      'assets/bdw_bu.jpg',
       fit: BoxFit.cover,
       height: double.infinity,
       width: double.infinity,
@@ -70,7 +70,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.only(top: 16, right: 16),
-            child: _buildImage('AAWSA_logo_1.png', 100),
+            child: _buildImage('bdw.png', 100),
           ),
         ),
       ),
@@ -141,7 +141,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         //   decoration: pageDecoration,
         // ),
         PageViewModel(
-          title: "እንካን ወደ አዲስ አበባ ውሃ እና ፍሳሽ በሰላም መጡ፡፡",
+          title: "እንካን ባህር ዳር ውሃ እና ፍሳሽ በሰላም መጡ፡፡",
           bodyWidget: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
@@ -155,7 +155,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             bodyAlignment: Alignment.bottomCenter,
             imageAlignment: Alignment.topCenter,
           ),
-          image: _buildImage('aawsa_bu.jpg'),
+          image: _buildImage('bdw_bu.jpg'),
           reverse: true,
         ),
       ],
