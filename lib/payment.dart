@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:ussd_advanced/ussd_advanced.dart';
+//import 'package:ussd_advanced/ussd_advanced.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -109,10 +109,10 @@ class _PaymentState extends State<Payment> {
 
                                   //],
                                 ]),
-                            onTap: () {
-                              UssdAdvanced.sendUssd(
-                                  code: "*804#", subscriptionId: 1);
-                            },
+                            // onTap: () {
+                            //   UssdAdvanced.sendUssd(
+                            //       code: "*804#", subscriptionId: 1);
+                            // },
                           ),
                         ),
                         Card(
@@ -132,10 +132,10 @@ class _PaymentState extends State<Payment> {
 
                                   //],
                                 ]),
-                            onTap: () {
-                              UssdAdvanced.sendUssd(
-                                  code: "*847#", subscriptionId: 1);
-                            },
+                            // onTap: () {
+                            //   UssdAdvanced.sendUssd(
+                            //       code: "*847#", subscriptionId: 1);
+                            // },
                           ),
                         ),
                       ],

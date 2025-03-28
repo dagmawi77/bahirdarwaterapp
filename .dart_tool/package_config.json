@@ -422,12 +422,6 @@
       "languageVersion": "3.4"
     },
     {
-      "name": "ussd_advanced",
-      "rootUri": "file:///C:/Users/Dagi/AppData/Local/Pub/Cache/hosted/pub.dev/ussd_advanced-1.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "vector_graphics",
       "rootUri": "file:///C:/Users/Dagi/AppData/Local/Pub/Cache/hosted/pub.dev/vector_graphics-1.1.18",
       "packageUri": "lib/",
@@ -488,7 +482,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2025-03-28T03:51:48.124423Z",
+  "generated": "2025-03-28T04:29:45.375224Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///C:/flutter",

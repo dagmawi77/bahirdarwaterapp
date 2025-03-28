@@ -549,14 +549,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.4"
-  ussd_advanced:
-    dependency: "direct main"
-    description:
-      name: ussd_advanced
-      sha256: "516c940e14f48bf7c4a01648b5dcc348addf5d92a95095e80472c2ec9bc3e88b"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.0"
   vector_graphics:
     dependency: transitive
     description:
